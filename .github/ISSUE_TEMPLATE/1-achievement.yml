@@ -1,7 +1,7 @@
 name: Achievement
 description: Déclarer un achievement débloqué, avec sa preuve.
 title: "[ACHIEVEMENT] "
-labels: ["achievement"]
+labels: ["Achievement"]
 body:
   - type: markdown
     attributes:

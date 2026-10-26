@@ -1,7 +1,7 @@
 name: Carte Chaos
 description: Traiter une panne simulée comme un vrai incident.
 title: "[CHAOS] "
-labels: ["chaos"]
+labels: ["Chaos"]
 body:
   - type: markdown
     attributes:

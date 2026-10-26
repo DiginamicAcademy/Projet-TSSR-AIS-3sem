@@ -1,7 +1,7 @@
 name: Question au formateur
 description: Vous êtes bloqués depuis plus de 45 minutes, équipe et AIS compris.
 title: "[QUESTION] "
-labels: ["question-formateur"]
+labels: ["Question"]
 body:
   - type: markdown
     attributes:
