@@ -1,0 +1,23 @@
+# Aucun secret dans ce dépôt : les mots de passe sont dans Bitwarden.
+
+# Exports de gestionnaires de mots de passe
+bitwarden_export_*
+*.kdbx
+
+# Clés et certificats privés
+*.key
+*.pem
+*.pfx
+*.p12
+id_rsa*
+id_ed25519*
+
+# Fichiers de secrets
+.env
+*.secret
+secrets*
+
+# Fichiers système
+Thumbs.db
+desktop.ini
+.DS_Store

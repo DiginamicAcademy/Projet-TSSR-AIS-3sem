@@ -1,0 +1,62 @@
+name: Achievement
+description: Déclarer un achievement débloqué, avec sa preuve.
+title: "[ACHIEVEMENT] "
+labels: ["achievement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Une preuve = une capture d'écran + une phrase qui explique ce qu'elle montre.
+        L'AIS vérifie, puis ferme l'issue. Le formateur confirme ensuite.
+  - type: dropdown
+    id: achievement
+    attributes:
+      label: Achievement
+      options:
+        - Premier pas (10 pts)
+        - Bébé conteneur (10 pts)
+        - Machine à remonter le temps (10 pts)
+        - Le Gardien (25 pts)
+        - Roi du domaine (25 pts)
+        - Chacun chez soi (25 pts)
+        - Bienvenue au club (25 pts)
+        - Le Ticket d'or (10 pts)
+        - Vigie (25 pts)
+        - Lazare (50 pts)
+        - Pompier (25 pts)
+        - Doc vivante (50 pts)
+        - Scripteur, bonus (50 pts)
+        - Duo de choc, bonus AIS (50 pts)
+        - Flawless (50 pts)
+    validations:
+      required: true
+  - type: input
+    id: auteurs
+    attributes:
+      label: Réalisé par
+      placeholder: "Exemple : Léa et Karim"
+    validations:
+      required: true
+  - type: textarea
+    id: preuve
+    attributes:
+      label: Preuve
+      description: Glissez ici vos captures d'écran, ou collez la sortie d'une commande.
+    validations:
+      required: true
+  - type: textarea
+    id: explication
+    attributes:
+      label: Ce que montre la preuve
+      description: Une ou deux phrases, comme si vous l'expliquiez au patron.
+    validations:
+      required: true
+  - type: checkboxes
+    id: verifications
+    attributes:
+      label: Vérifications
+      options:
+        - label: La preuve ne montre aucun mot de passe.
+          required: true
+        - label: Les noms et adresses IP correspondent à notre plan d'adressage.
+          required: true

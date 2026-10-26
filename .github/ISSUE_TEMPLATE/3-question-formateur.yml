@@ -1,0 +1,35 @@
+name: Question au formateur
+description: Vous êtes bloqués depuis plus de 45 minutes, équipe et AIS compris.
+title: "[QUESTION] "
+labels: ["question-formateur"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        En attendant la réponse, passez à une autre tâche.
+  - type: input
+    id: mission
+    attributes:
+      label: Mission concernée
+      placeholder: "Exemple : Mission 6, DHCP"
+    validations:
+      required: true
+  - type: textarea
+    id: contexte
+    attributes:
+      label: Ce que vous cherchez à faire
+    validations:
+      required: true
+  - type: textarea
+    id: essais
+    attributes:
+      label: Ce que vous avez déjà essayé
+      description: Commandes lancées, messages d'erreur, captures.
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Votre question
+    validations:
+      required: true

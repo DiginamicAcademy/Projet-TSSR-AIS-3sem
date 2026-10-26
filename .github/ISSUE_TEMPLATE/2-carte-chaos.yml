@@ -1,0 +1,57 @@
+name: Carte Chaos
+description: Traiter une panne simulée comme un vrai incident.
+title: "[CHAOS] "
+labels: ["chaos"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ouvrez cette issue dès que la carte est ouverte, et notez l'heure.
+        Résolue en moins de 30 minutes = achievement « Pompier ».
+  - type: input
+    id: carte
+    attributes:
+      label: Carte
+      placeholder: "Exemple : Carte n°1, Plus personne n'a Internet !"
+    validations:
+      required: true
+  - type: input
+    id: debut
+    attributes:
+      label: Heure d'ouverture de la carte
+      placeholder: "Exemple : 10 h 02"
+    validations:
+      required: true
+  - type: textarea
+    id: symptome
+    attributes:
+      label: Symptôme constaté
+      description: Ce qu'on voit, ce que disent les utilisateurs.
+    validations:
+      required: true
+  - type: textarea
+    id: chronologie
+    attributes:
+      label: Chronologie
+      description: Chaque test, avec son heure et son résultat.
+      value: |
+        - hh h mm : ...
+        - hh h mm : ...
+    validations:
+      required: true
+  - type: textarea
+    id: cause
+    attributes:
+      label: Cause
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution
+  - type: input
+    id: fin
+    attributes:
+      label: Heure de résolution
+  - type: textarea
+    id: lecon
+    attributes:
+      label: Ce qu'on retient pour la prochaine fois
